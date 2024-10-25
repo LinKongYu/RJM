@@ -1,7 +1,7 @@
 [
   {
     "__type__": "cc.Prefab",
-    "_name": "Game",
+    "_name": "Temp",
     "_objFlags": 0,
     "__editorExtras__": {},
     "_native": "",
@@ -13,7 +13,7 @@
   },
   {
     "__type__": "cc.Node",
-    "_name": "Game",
+    "_name": "Temp",
     "_objFlags": 0,
     "__editorExtras__": {},
     "_parent": null,
@@ -220,7 +220,7 @@
       "b": 0,
       "a": 255
     },
-    "_string": "打开界面一",
+    "_string": "打开界面",
     "_horizontalAlign": 1,
     "_verticalAlign": 1,
     "_actualFontSize": 40,
@@ -441,7 +441,7 @@
     "fileId": "80pYfQcTlLN4L11uo605Ny"
   },
   {
-    "__type__": "09f8fxSw3dHc4jVF2NRPnXF",
+    "__type__": "e2542nqfdRLo4lC/Eq+RAnq",
     "_name": "",
     "_objFlags": 0,
     "__editorExtras__": {},
@@ -456,7 +456,7 @@
   },
   {
     "__type__": "cc.CompPrefabInfo",
-    "fileId": "6aUzeYrRFFNJ5K1p+vvwQe"
+    "fileId": "b085X2+BJFZo90CMNz/cbR"
   },
   {
     "__type__": "cc.PrefabInfo",

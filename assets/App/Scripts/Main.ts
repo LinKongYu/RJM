@@ -25,9 +25,22 @@ export class Main extends Component {
 
     // 开始
     start() {
-        // this.Example_Lang();
-        // this.Example_Net();
-        // this.Example_UI();
+        //this.Example_Lang();
+        //this.Example_Net();
+        //this.Example_UI();
+
+        this.showEnterBtn();
+    }
+
+    async showEnterBtn() {
+        // 1、加载分包预制体资源：prefabs/Temp.prefab
+        const prefab = await app.res.loadRes<Prefab>('Prefabs/Temp');
+
+        // 2、实例化预制体
+        const newNode = instantiate(prefab);
+
+        // 3、将实例化的节点添加到当前节点下
+        this.node.addChild(newNode);
     }
 
     // UI示例
