@@ -1,0 +1,9 @@
+区域编号,坐标原点（左下）,行数,列数
+int,int32Array,int,int
+ID,StartPos,Row,Col
+server,server,server,server
+client,client,client,client
+1,5#5,20,20
+2,25#5,20,20
+3,-25#-25,20,20
+4,5#-25,20,20
