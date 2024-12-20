@@ -1,5 +1,5 @@
 import { _decorator, Button, Component, Node } from 'cc';
-import UIView from '../../Core/Scripts/UI/UIView';
+import UIView from '../../scripts/framework/ui/UIView';
 const { ccclass, property } = _decorator;
 
 @ccclass('BagWin')

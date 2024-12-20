@@ -17,6 +17,6 @@ export class Temp extends Component {
 
     /** 点击打开按钮 */
     onOpenClick() {
-        app.ui.showScene(WorkWin);
+        app.ui.openWin("WorkWin");
     }
 }

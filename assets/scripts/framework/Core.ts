@@ -1,13 +1,13 @@
 // 管理器
-import { audioMgr } from "./Managers/AudioMgr";
-import { bundleMgr } from "./Managers/BundleMgr";
-import { dataMgr } from "./Managers/DataMgr";
-import { eventMgr } from "./Managers/EventMgr";
-import { langMgr } from "./Managers/LangMgr";
-import { logMgr } from "./Managers/LogMgr";
-import { resMgr } from "./Managers/ResMgr";
-import { timeMgr } from "./Managers/TimeMgr";
-import { uiRoot } from "./UI/UIRoot";
+import { audioMgr } from "./managers/AudioMgr";
+import { bundleMgr } from "./managers/BundleMgr";
+import { dataMgr } from "./managers/DataMgr";
+import { eventMgr } from "./managers/EventMgr";
+import { langMgr } from "./managers/LangMgr";
+import { logMgr } from "./managers/LogMgr";
+import { resMgr } from "./managers/ResMgr";
+import { timeMgr } from "./managers/TimeMgr";
+import { uiRoot } from "./ui/UIRoot";
 
 /**
  * Core 类

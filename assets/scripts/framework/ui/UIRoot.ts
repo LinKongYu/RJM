@@ -1,8 +1,9 @@
-import { director, instantiate, Node, Prefab } from "cc";
-import { resMgr } from "../Managers/ResMgr";
-import UIComp from "./UIComp";
-import { UIScene } from "./UIScene";
+import { director, instantiate, Node, Prefab, resources } from "cc";
+import { resMgr } from "../managers/ResMgr";
 import UIView from "./UIView";
+import { UIScene } from "./UIScene";
+import UIComp from "./UIComp";
+import { ViewPath } from "./ViewPath";
 
 /** 管理UI视图的显示和隐藏 */
 class UIRoot {
@@ -57,6 +58,38 @@ class UIRoot {
 
         return view;
     }
+
+
+        /**
+     * 显示窗口
+     * @param WindowClass 窗口类
+     * @param data 传递给窗口的数据
+     * @returns 返回显示的UIView实例
+     */
+    public async openWin(winName: string, data: any = null): Promise<UIView> {
+
+        let path = ViewPath[winName];
+        if (!path) {
+            // cc.error("cant find win path :" + winName);
+            return null;
+        }
+        let view = this.cacheList.get(path);
+
+        if (!view) {
+            const node = instantiate(await resMgr.loadRes<Prefab>(path));
+            const uiComp = node.getComponent(UIView) || node.addComponent(UIView);
+            this.cacheList.set(path, uiComp as UIView);
+            view = uiComp as UIView;
+            view.data = data;
+        }
+
+        view.node.parent = this.root;
+        this.openList.push(view);
+        view.node.setSiblingIndex(this.root.children.length - 1);
+
+        return view;
+    }
+
 
     /**
      * 隐藏窗口

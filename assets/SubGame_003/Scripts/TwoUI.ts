@@ -1,5 +1,5 @@
 import { _decorator, Button, Component, Node } from 'cc';
-import { UIScene } from '../../Core/Scripts/UI/UIScene';
+import { UIScene } from '../../scripts/framework/ui/UIScene';
 import { OneUI } from './OneUI';
 import { BagWin } from './BagWin';
 const { ccclass, property } = _decorator;

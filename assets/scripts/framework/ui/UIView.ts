@@ -1,6 +1,6 @@
 import { Node } from "cc";
-import UIComp from "./UIComp";
 import { _decorator } from "cc";
+import UIComp from "./UIComp";
 import { uiRoot } from "./UIRoot";
 const { ccclass } = _decorator;
 

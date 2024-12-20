@@ -1,7 +1,7 @@
 import { sys } from "cc";
+import { Crypt } from "../utils/Crypt";
+import { Json } from "../utils/Json";
 import { logMgr } from "./LogMgr";
-import { Crypt } from "../Utils/Crypt";
-import { Json } from "../Utils/Json";
 
 /** 
  * 数据管理器

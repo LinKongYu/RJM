@@ -1,6 +1,6 @@
+import { Ws } from './../../scripts/framework/components/NetWork/Ws';
 import { EDITOR } from 'cc/env';
 import { _decorator, Component, Node, log, instantiate, Prefab, Vec3, EventTouch, input, Input, Camera, find, UITransform } from 'cc';
-import { Ws } from '../../Core/Scripts/Components/NetWork/Ws';
 
 const { ccclass, property } = _decorator;
 

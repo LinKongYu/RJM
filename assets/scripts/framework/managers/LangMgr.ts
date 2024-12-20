@@ -1,8 +1,8 @@
 import { JsonAsset, director, Director } from "cc";
 import { EDITOR } from "cc/env";
 import { dataMgr } from "./DataMgr";
-import { resMgr } from "./ResMgr";
 import { eventMgr } from "./EventMgr";
+import { resMgr } from "./ResMgr";
 
 /** 
  * 语言管理器

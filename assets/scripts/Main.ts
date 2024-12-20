@@ -4,7 +4,7 @@ const { ccclass, property } = _decorator;
 /** 入口文件 */
 @ccclass('Main')
 export class Main extends Component {
-    // 测试变量类型
+    // 示例数据
     private num: number = 1;
     private str: string = "文本内容";
     private obj: any = {
@@ -12,7 +12,6 @@ export class Main extends Component {
         name: '名称'
     };
 
-    // 加载
     onLoad() {
         // this.Example_Log();
         // this.Example_Data();
@@ -23,7 +22,6 @@ export class Main extends Component {
         // this.Example_Time();
     }
 
-    // 开始
     start() {
         //this.Example_Lang();
         //this.Example_Net();
@@ -34,7 +32,7 @@ export class Main extends Component {
 
     async showEnterBtn() {
         // 1、加载分包预制体资源：prefabs/Temp.prefab
-        const prefab = await app.res.loadRes<Prefab>('Prefabs/Temp');
+        const prefab = await app.res.loadRes<Prefab>('resources/views/Temp');
 
         // 2、实例化预制体
         const newNode = instantiate(prefab);

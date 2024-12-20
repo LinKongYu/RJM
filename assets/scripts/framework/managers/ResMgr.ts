@@ -1,7 +1,7 @@
 import { Asset, AssetManager, assetManager } from "cc";
-import { logMgr } from "./LogMgr";
+import { Parser } from "../utils/Parser";
 import { bundleMgr } from "./BundleMgr";
-import { Parser } from "../Utils/Parser";
+import { logMgr } from "./LogMgr";
 
 /** 
  * 资源管理器
