@@ -1,6 +1,5 @@
-import { UIScene } from './../ui/UIScene';
-import { _decorator, Button, Component, Node } from 'cc';
-import UIView from '../ui/UIView';
+import { _decorator } from 'cc';
+import UIView from '../framework/ui/UIView';
 
 const { ccclass, property } = _decorator;
 

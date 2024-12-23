@@ -7,11 +7,9 @@
 import { assetManager } from "cc";
 import { csv_open, rs_make_tab } from "./CsvLoader";
 import { TextAsset } from "cc";
-import { resMgr } from "../Managers/ResMgr";
-
+import { resMgr } from './../managers/ResMgr';
 
 export const ONLINE_CSV_HASH = "90db225638717d689ca1b90a67ba804ff84c820d";
-
 
 export class ConfigsCtrl {
     

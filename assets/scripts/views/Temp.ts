@@ -1,5 +1,4 @@
 import { _decorator, Component, Node, Button } from 'cc';
-import { WorkWin } from './WorkWin';
 const { ccclass, property } = _decorator;
 
 @ccclass('Temp')
