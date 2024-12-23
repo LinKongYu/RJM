@@ -1,4 +1,5 @@
 import { _decorator, Component, Node, Button } from 'cc';
+import { Helper } from '../framework/utils/Helper';
 const { ccclass, property } = _decorator;
 
 @ccclass('Temp')
@@ -16,6 +17,8 @@ export class Temp extends Component {
 
     /** 点击打开按钮 */
     onOpenClick() {
-        app.ui.openWin("WorkWin");
+        // app.ui.openWin("WorkWin");
+
+        Helper.loadSubGame("SubGame_001")
     }
 }

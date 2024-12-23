@@ -1,10 +1,42 @@
 import { _decorator } from 'cc';
 import UIView from '../framework/ui/UIView';
+import { GetConfigs } from '../framework/csv/CsvCtrl';
 
 const { ccclass, property } = _decorator;
 
+
+
+
+class FoodSource {
+
+    id: number;
+
+    foodId: number;
+
+    foodCnt: number;
+
+    maxCnt: number;
+
+    produceTIme: number;
+}
+
+class food
+
+class FoodFinal {
+
+    id: number;
+
+
+
+}
+
 @ccclass('WorkWin')
 export class WorkWin extends UIView {
+
+
+    private curFood: number = 0;
+
+    private 
 
     // 场景初始
     onInit() {
@@ -25,11 +57,6 @@ export class WorkWin extends UIView {
     CC_ClickOpen() {
         // app.ui.showScene(TwoUI);
         app.ui.openWin("WorkWin");
-    }
 
-    /** 点击关闭按钮 */
-    CC_ClickClose(): void
-    {
-        this.Hide();
     }
 }

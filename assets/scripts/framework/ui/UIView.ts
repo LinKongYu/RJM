@@ -60,4 +60,10 @@ export default class UIView extends UIComp {
         this.Hide();
         uiRoot.hideWindowImmediately(this);
     }
+
+    /** 点击关闭按钮 */
+    CC_ClickClose(): void
+    {
+        this.Hide();
+    }
 }
