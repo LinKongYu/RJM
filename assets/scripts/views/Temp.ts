@@ -1,4 +1,4 @@
-import { _decorator, Component, Node, Button } from 'cc';
+import { _decorator, Component, Node, Button, Prefab, instantiate } from 'cc';
 import { Helper } from '../framework/utils/Helper';
 const { ccclass, property } = _decorator;
 
@@ -17,8 +17,17 @@ export class Temp extends Component {
 
     /** 点击打开按钮 */
     onOpenClick() {
-        // app.ui.openWin("WorkWin");
+        app.ui.openWin("WorkWin");
 
-        Helper.loadSubGame("SubGame_001")
+        // Helper.loadSubGame("SubGame_002", async () => {
+        //     // 1、加载分包预制体资源：prefabs/Temp.prefab
+        //     const prefab = await app.res.loadRes<Prefab>('SubGame_002/Gopher');
+
+        //     // 2、实例化预制体
+        //     const newNode = instantiate(prefab);
+
+        //     // 3、将实例化的节点添加到当前节点下
+        //     this.node.addChild(newNode);
+        // })
     }
 }
