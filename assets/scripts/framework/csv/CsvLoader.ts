@@ -152,7 +152,7 @@ function rs_make_tab(name:string, rs: any) {
     let keyCnt = rs_make_meta(rs);
 
     // rows
-    for (var i = 2; i < rs.length; i++) {
+    for (var i = 3; i < rs.length; i++) {
         var row = rs[i];
 
         //var obj: { [key: number]: any } = {};

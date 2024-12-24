@@ -23,8 +23,6 @@ class FoodFinal {
 
     id: number;
 
-
-
 }
 
 @ccclass('WorkWin')
@@ -43,6 +41,8 @@ export class WorkWin extends UIView {
     // 场景初始
     onInit() {
         app.log.info('分包场景1_初始');
+
+        this.initData();
     }
 
     protected start(): void {
@@ -124,5 +124,12 @@ export class WorkWin extends UIView {
             let lbData = node.getChildByName("Label");
             lbData.getComponent(Label).string = '';
         });
+    }
+
+    private initData() {
+        let conf = GetConfigs<ConfT.Level>("Level", 1);
+        if (conf) {
+            let time = conf.Time;
+        }
     }
 }

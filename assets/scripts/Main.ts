@@ -1,4 +1,6 @@
 import { _decorator, Asset, Component, instantiate, Node, Prefab } from 'cc';
+import { ConfigsCtrl } from './framework/csv/CsvCtrl';
+import { Helper } from './framework/utils/Helper';
 const { ccclass, property } = _decorator;
 
 /** 入口文件 */
@@ -28,6 +30,10 @@ export class Main extends Component {
         //this.Example_UI();
 
         this.showEnterBtn();
+
+        Helper.loadSubGame("csv", async () => {
+            ConfigsCtrl.instance.loadConfigs(() => {}, null, null, "csv");
+        })
     }
 
     async showEnterBtn() {

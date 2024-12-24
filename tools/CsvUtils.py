@@ -149,18 +149,18 @@ def generateConfT():
     NewConfT = NewConfT + "export let KeyIndexs = {}\nexport function GetGameDataKeyIndex(s:string)\n{\n\treturn KeyIndexs[s]\n}\n"
     ConfT = "declare global {\n\texport namespace ConfT {\n\t\t"
     NewConfT = NewConfT +  "export class GameData {\n\tpublic datas = []\n}\n"
-    for root, dirs, files in os.walk('../assets/Csv/'):
+    for root, dirs, files in os.walk('../assets/csv/'):
         for fileName in files:
             if not fileName.endswith('.csv'):
                 continue
             print(fileName)
 
             # 读取CSV文件
-            with io.open('../assets/Csv/' + fileName, mode='r') as csvfile:
+            with io.open('../assets/csv/' + fileName, mode='r') as csvfile:
                 csvreader = csv.reader(csvfile)
-                next(csvreader)
+                names = next(csvreader)  # 第一行作为属性名
                 types = next(csvreader)  # 第二行作为类型
-                names = next(csvreader)  # 第三行作为属性名
+ 
             
             # 确保类型和名称的数量相同
             assert len(types) == len(names), "类型和属性名的数量必须相同"
@@ -202,7 +202,7 @@ def generateConfT():
     file.write(ConfT)
     file.close()
 
-    file = open("../assets/Core/Scripts/Csv/ConfT.ts", "w")
+    file = open("../assets/scripts/framework/csv/ConfT.ts", "w")
     file.write(NewConfT)
     file.close()
 

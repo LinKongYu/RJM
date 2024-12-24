@@ -1,9 +1,0 @@
-区域编号,名称,数量,等级
-int,string,int,int
-ID,Name,Num,Level
-server,server,server,server
-client,client,client,client
-1,苹果,3,20
-2,香蕉,4,20
-3,橘子,5,20
-4,葡萄,6,20
